@@ -48,7 +48,7 @@ Before you begin, make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sehrishahmedsangrasi/generative_chatbot.git
+   git clone https://github.com/sehrishahmedsangrasi/Sterling-Strategy-Partners.git
    cd  web
    ```
 

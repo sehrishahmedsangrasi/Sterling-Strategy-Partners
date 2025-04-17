@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sterling Strategy Partners
 
-## Getting Started
+This project is a web application built using Next.js and Firebase, with additional assistance from ChatGPT and DeepSeek. The goal of this project is to provide a modern, feature-rich web platform with real-time data management, authentication, and efficient state handling.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
+- **Next.js** – A React framework for building fast and scalable applications
+- **React** – A JavaScript library for building user interfaces
+- **Framer Motion** – For adding animations and interactive transitions to the UI
+- **TailwindCSS** – A utility-first CSS framework for styling the components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Backend
+- **Firebase** – Used for user authentication, Firestore (NoSQL database), Firebase storage, and cloud functions
+- **Firebase Authentication** – To handle user registration and login
 
-## Learn More
+### Development Tools
+- **Vercel** – For deployment (used Next.js deployment features)
+- **Git** – Version control to manage project changes
 
-To learn more about Next.js, take a look at the following resources:
+### Assistance
+- **ChatGPT** – Assisted in understanding and resolving coding challenges
+- **DeepSeek** – Helped in feature implementation and enhanced application functionality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **User Authentication**: Firebase Authentication is used for secure sign-up and login, including support for Google, Email, and password authentication
+- **Real-Time Data**: Integrated Firebase Firestore for real-time updates and efficient data management
+- **Dynamic Routing**: Next.js dynamic routing features to load pages and content dynamically based on user interaction
+- **Responsive Design**: TailwindCSS ensures the app is responsive and adapts to different screen sizes
+- **Animation**: Used Framer Motion to add animations for smooth user interaction
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before you begin, make sure you have the following installed:
+
+- Node.js (v14 or higher)
+- npm or yarn (package managers)
+- Firebase account (for backend)
+
+### Steps to run the project locally
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   # or if you're using yarn
+   yarn install
+   ```
+
+3. **Set up environment variables**:
+   Create a `.env.local` file in the root of your project and add the following variables:
+   ```
+   NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   # or if you're using yarn
+   yarn dev
+   ```
+
+5. **Open your browser** and navigate to `http://localhost:3000` to see the application running.
+
+## Usage
+
+<!-- Add specific usage instructions here. For example: -->
+- To register a new user, navigate to the Sign Up page
+- To access protected routes, users must be authenticated
+- Data changes are reflected in real-time across all connected clients
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the repository**
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature-branch-name
+   ```
+3. **Make your changes**
+4. **Commit your changes**:
+   ```bash
+   git commit -m "Describe your changes"
+   ```
+5. **Push to your branch**:
+   ```bash
+   git push origin feature-branch-name
+   ```
+6. **Open a pull request**
+
+## License
+
+<!-- Specify your license here, for example: -->
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- Thanks to the Next.js and Firebase teams for their excellent documentation
+- Special thanks to ChatGPT and DeepSeek for their assistance in development
+- Icons provided by [heroicons](https://heroicons.com/)

@@ -7,6 +7,7 @@ export default function Hero() {
         Elevating businesses through strategic advisory and transformative growth solutions.
         Our bespoke partnership approach delivers measurable results and sustainable competitive advantage.
         </p>
+        
       </section>
     );
   }

@@ -19,9 +19,9 @@ const Footer = () => {
           <h2 className="font-semibold mb-12 text-brass">Navigation</h2>
           <ul className="space-y-6">
             <li><a href="/" className="hover:text-gold transition font-medium">Home</a></li>
-            <li><a href="#projects" className="hover:text-gold transition font-medium">Projects</a></li>
-            <li><a href="#about" className="hover:text-gold transition font-medium">About Me</a></li>
-            <li><a href="#contact" className="hover:text-gold transition font-medium">Contact</a></li>
+            <li><a href="/results" className="hover:text-gold transition font-medium">Projects</a></li>
+            <li><a href="/About" className="hover:text-gold transition font-medium">About Me</a></li>
+            <li><a href="/contact" className="hover:text-gold transition font-medium">Contact</a></li>
           </ul>
         </div>
 
@@ -30,11 +30,11 @@ const Footer = () => {
           <h2 className="font-semibold mb-12 text-brass">Resources</h2>
           <ul className="space-y-6">
             <li>
-              <a
-                href="/resume.pdf"
+            <a
+                href="https://drive.google.com/file/d/1twyr3OHe-4ZcgkhtKhTTZUErUDtG_ZXN/view?usp=drivesdk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gold transition font-medium"
+                className="hover:text-yellow-500 transition font-medium"
               >
                 Resume
               </a>

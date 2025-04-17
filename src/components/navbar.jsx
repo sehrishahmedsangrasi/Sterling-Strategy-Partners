@@ -19,10 +19,10 @@ const Navbar = () => {
       {/* Desktop Nav */}
       <div className="hidden md:flex space-x-10 text-white text-[0.95rem] font-medium">
         <Link href="/" className="hover:text-gold transition">Home</Link>
-        <Link href="/shop" className="hover:text-gold transition">Results</Link>
-        <Link href="#about" className="hover:text-gold transition">About</Link>
-        <Link href="#contacts" className="hover:text-gold transition">Contacts</Link>
-        <Link href="#services" className="hover:text-gold transition">Services</Link>
+        <Link href="/results" className="hover:text-gold transition">Results</Link>
+        <Link href="/About" className="hover:text-gold transition">About</Link>
+        <Link href="/contact" className="hover:text-gold transition">Contacts</Link>
+        <Link href="/services" className="hover:text-gold transition">Services</Link>
       </div>
 
       {/* Mobile Toggle Button */}

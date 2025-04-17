@@ -16,16 +16,14 @@ This project is a web application built using Next.js and Firebase, with additio
 
 ### Frontend
 - **Next.js** – A React framework for building fast and scalable applications
-- **React** – A JavaScript library for building user interfaces
 - **Framer Motion** – For adding animations and interactive transitions to the UI
 - **TailwindCSS** – A utility-first CSS framework for styling the components
 
 ### Backend
 - **Firebase** – Used for user authentication, Firestore (NoSQL database), Firebase storage, and cloud functions
-- **Firebase Authentication** – To handle user registration and login
+
 
 ### Development Tools
-- **Vercel** – For deployment (used Next.js deployment features)
 - **Git** – Version control to manage project changes
 
 ### Assistance
@@ -33,8 +31,6 @@ This project is a web application built using Next.js and Firebase, with additio
 - **DeepSeek** – Helped in feature implementation and enhanced application functionality
 
 ## Features
-
-- **User Authentication**: Firebase Authentication is used for secure sign-up and login, including support for Google, Email, and password authentication
 - **Real-Time Data**: Integrated Firebase Firestore for real-time updates and efficient data management
 - **Dynamic Routing**: Next.js dynamic routing features to load pages and content dynamically based on user interaction
 - **Responsive Design**: TailwindCSS ensures the app is responsive and adapts to different screen sizes
@@ -45,8 +41,6 @@ This project is a web application built using Next.js and Firebase, with additio
 ### Prerequisites
 
 Before you begin, make sure you have the following installed:
-
-- Node.js (v14 or higher)
 - npm or yarn (package managers)
 - Firebase account (for backend)
 
@@ -54,8 +48,8 @@ Before you begin, make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/sehrishahmedsangrasi/generative_chatbot.git
+   cd  web
    ```
 
 2. **Install dependencies**:
@@ -65,32 +59,16 @@ Before you begin, make sure you have the following installed:
    yarn install
    ```
 
-3. **Set up environment variables**:
-   Create a `.env.local` file in the root of your project and add the following variables:
-   ```
-   NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-auth-domain
-   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
-   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-storage-bucket
-   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
-   NEXT_PUBLIC_FIREBASE_APP_ID=your-app-id
-   ```
 
-4. **Run the development server**:
+3. **Run the development server**:
    ```bash
    npm run dev
    # or if you're using yarn
    yarn dev
    ```
 
-5. **Open your browser** and navigate to `http://localhost:3000` to see the application running.
+4. **Open your browser** and navigate to `http://localhost:3000` to see the application running.
 
-## Usage
-
-<!-- Add specific usage instructions here. For example: -->
-- To register a new user, navigate to the Sign Up page
-- To access protected routes, users must be authenticated
-- Data changes are reflected in real-time across all connected clients
 
 ## Contributing
 
@@ -110,15 +88,3 @@ Contributions are welcome! Please follow these steps:
    ```bash
    git push origin feature-branch-name
    ```
-6. **Open a pull request**
-
-## License
-
-<!-- Specify your license here, for example: -->
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgements
-
-- Thanks to the Next.js and Firebase teams for their excellent documentation
-- Special thanks to ChatGPT and DeepSeek for their assistance in development
-- Icons provided by [heroicons](https://heroicons.com/)

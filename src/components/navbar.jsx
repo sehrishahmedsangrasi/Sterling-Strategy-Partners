@@ -7,24 +7,33 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Define navigation items with route paths
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "Results", path: "/results" },
+    { label: "About", path: "/about" },
+    { label: "Contacts", path: "/contact" },
+    { label: "Services", path: "/services" },
+  ];
+
   return (
     <nav className="flex items-center justify-between lg:px-8 py-4 px-4 text-white relative bg-navy shadow-md z-50">
       {/* Left Section: Logo */}
       <div className="flex items-center w-auto h-8">
-        <img src="logo.png" alt="Logo" className="w-8 h-8 mr-2" />
+        <img src="/logo.png" alt="Logo" className="w-8 h-8 mr-2" />
         <span className="text-gold font-bold text-xl">SSP</span>
       </div>
 
-      {/* Desktop Nav */}
+      {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-10 text-white text-[0.95rem] font-medium">
-        <Link href="/" className="hover:text-gold transition">Home</Link>
-        <Link href="/results" className="hover:text-gold transition">Results</Link>
-        <Link href="/About" className="hover:text-gold transition">About</Link>
-        <Link href="/contact" className="hover:text-gold transition">Contacts</Link>
-        <Link href="/services" className="hover:text-gold transition">Services</Link>
+        {navItems.map((item, index) => (
+          <Link key={index} href={item.path} className="hover:text-gold transition">
+            {item.label}
+          </Link>
+        ))}
       </div>
 
-      {/* Mobile Toggle Button */}
+      {/* Mobile Menu Button */}
       <div className="md:hidden">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -42,14 +51,14 @@ const Navbar = () => {
         } z-40 md:hidden`}
         style={{ visibility: menuOpen ? "visible" : "hidden" }}
       >
-        {["Home", "Results", "About", "Contacts", "Services"].map((item, idx) => (
+        {navItems.map((item, index) => (
           <Link
-            key={idx}
-            href={`#${item.toLowerCase()}`}
+            key={index}
+            href={item.path}
             className="py-2 text-white hover:text-gold transition"
             onClick={() => setMenuOpen(false)}
           >
-            {item}
+            {item.label}
           </Link>
         ))}
       </div>

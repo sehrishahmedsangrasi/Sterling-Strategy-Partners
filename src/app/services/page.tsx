@@ -2,7 +2,6 @@
 
 import { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Calendar } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 

@@ -1,13 +1,10 @@
-// File: app/about/page.js
+
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-// export const metadata = {
-//   title: 'About | Sterling Strategy Partners',
-//   description: 'Learn about our expertise in corporate strategy and business optimization.',
-// };
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

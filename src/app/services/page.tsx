@@ -271,13 +271,21 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [formData, setFormData] = useState({
+    interface FormData {
+    name: string;
+    email: string;
+    service: string;
+    message: string;
+  };
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     service: '',
     message: ''
   });
-  const [errors, setErrors] = useState({});
+
+ const [errors, setErrors] = useState<Partial<FormData>>({});
+
 
   const handleInputChange = useCallback((e) => {
     const { name, value } = e.target;

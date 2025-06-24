@@ -1,7 +1,7 @@
 // app/page.tsx (or pages/index.tsx depending on your setup)
 
-import Hero from "../components/Hero";
-import Experience from "../components/Experience"
+import Hero from "../components/hero";
+import Experience from "../components/experience"
 
 export default function Home() {
   return (
